@@ -1,8 +1,5 @@
-'cloudinary',
-'cloudinary_storage',
-
-
 import cloudinary
+import cloudinary_storage
 
 cloudinary.config(
     cloud_name="mlnj3amk",
@@ -11,3 +8,6 @@ cloudinary.config(
 )
 
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
